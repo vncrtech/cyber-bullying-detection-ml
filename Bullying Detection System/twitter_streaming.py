@@ -1,5 +1,5 @@
 """
-The code below were heavily based on the tutorial found in http://socialmedia-class.org/twittertutorial.html
+The code below was heavily based on the tutorial found in http://socialmedia-class.org/twittertutorial.html
 
 The code was modified to extract tweets the were made in the Philippines.
 """
