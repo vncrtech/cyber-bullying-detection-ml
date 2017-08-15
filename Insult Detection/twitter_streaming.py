@@ -12,10 +12,10 @@ import pandas as pd
 import folium
 
 # Variables that contains the user credentials to access Twitter API
-ACCESS_TOKEN = ''
-ACCESS_SECRET = ''
-CONSUMER_KEY = ''
-CONSUMER_SECRET = ''
+ACCESS_TOKEN = '2599596229-gzGNTEyxKtlPr6pQtkLCxT5RRHojUHUM3UvURAv'
+ACCESS_SECRET = 'N89tu1uIZias46qEeR8SNkyV7l6jepA8QVmjfdP7fKjov'
+CONSUMER_KEY = 'cpYQ5mlqJsEfvyus0B7Vqn4zo'
+CONSUMER_SECRET = 'LXuI4b7fn5QGzrdBQTwHClXXBmj9uvs8iQmpA6Ng1jjL17adNs'
 
 oauth = OAuth(ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRET)
 
