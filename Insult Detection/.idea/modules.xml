@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Bullying Detection System.iml" filepath="$PROJECT_DIR$/.idea/Bullying Detection System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Insult Detection System.iml" filepath="$PROJECT_DIR$/.idea/Insult Detection System.iml" />
     </modules>
   </component>
 </project>
