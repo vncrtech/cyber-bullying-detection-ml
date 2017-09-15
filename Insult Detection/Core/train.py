@@ -7,6 +7,9 @@ from sklearn.feature_extraction.text import CountVectorizer
 train_file = "training_dataset.csv"
 train_data = pd.read_csv(train_file,encoding='ISO-8859-1')
 
+train_data['classification 2'] = train_data['classification 2'].replace('Bully',1)
+train_data['classification 2'] = train_data['classification 2'].replace('Not bully',0)
+
 # Sets the X and y values. X = input, y = prediction
 X = train_data
 y = train_data['classification 2']

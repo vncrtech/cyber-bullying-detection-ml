@@ -27,7 +27,7 @@ twitter_stream = TwitterStream(auth=oauth)
 iterator = twitter_stream.statuses.filter(locations="116.982421875,5.4847680181,127.001953125,18.7295019991")
 
 # set the number of tweets you want to get
-tweet_count = 10
+tweet_count = 100
 
 text, follower_count, statuses_count, friends_count, profile_image_url, \
 name, screen_name, country_code, lat, lon = ([] for i in range(10))
@@ -79,8 +79,8 @@ cleaned_tweets = pd.read_csv('tweets.csv')
 map_object = folium.Map(location=[13, 122], zoom_start=6)
 
 # Plot the Tweets in the map
-for lat,lon,name in zip(cleaned_tweets['Lat'],cleaned_tweets['Lon'],cleaned_tweets['Screen Name']):
-    map_object.add_child(folium.Marker(location=[lat,lon], popup=(folium.Popup(name))))
+for lat,lon,text in zip(cleaned_tweets['Lat'],cleaned_tweets['Lon'],cleaned_tweets['Text']):
+    map_object.add_child(folium.Marker(location=[lat,lon], popup=(folium.Popup(text))))
 
 # Save map into an HTML file
 folium.Map.save(map_object, "index.html")

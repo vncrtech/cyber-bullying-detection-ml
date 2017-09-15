@@ -16,6 +16,9 @@ X_dtm = vect.transform(input_text)
 y_predicted = model.predict(X_dtm)
 
 predictions = pd.concat([input_text,pd.DataFrame(y_predicted)],axis=1)
+predictions.columns = ['Text','Prediction']
+predictions['Prediction'] = predictions['Prediction'].replace(1,'Bully')
+predictions['Prediction'] = predictions['Prediction'].replace(0,'Not Bully')
 
 predictions.to_csv('predictions.csv', encoding='utf-8')
 
