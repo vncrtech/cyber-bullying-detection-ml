@@ -1,20 +1,22 @@
-import pandas as pd
 import pickle
+import pandas as pd
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import CountVectorizer
 
 # opens the initial training file
-train_file = "training_dataset.csv"
-train_data = pd.read_csv(train_file,encoding='ISO-8859-1')
+DATASET = "training_dataset.csv"
+train_data = pd.read_csv(DATASET, encoding='ISO-8859-1')
 
-train_data['classification 2'] = train_data['classification 2'].replace('Bully',1)
-train_data['classification 2'] = train_data['classification 2'].replace('Not bully',0)
+train_data['classification 2'] = train_data['classification 2'].replace(
+    'Bully', 1)
+train_data['classification 2'] = train_data['classification 2'].replace(
+    'Not bully', 0)
 
 # Sets the X and y values. X = input, y = prediction
 X = train_data
 y = train_data['classification 2']
 
-vect = CountVectorizer(ngram_range=(1,5), max_df=0.99)
+vect = CountVectorizer(ngram_range=(1, 5), max_df=0.99)
 
 X_dtm = vect.fit_transform(X.text)
 
