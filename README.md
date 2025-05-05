@@ -10,11 +10,12 @@ This project is an AI-based system designed to detect cyberbullying in text data
 
 ## Project Structure
 ```
-Insult Detection/
-├── Core/
+bullying_detection/
+├── core/
 │   ├── predict.py              # Script for making predictions
 │   ├── train.py                # Script for training the model
 │   ├── training_dataset.csv    # Dataset for training
+│   ├── tweets.csv              # Input data for predictions
 │   ├── twitter_streaming.py    # Script for collecting and visualizing tweets
 ├── trained_model.sav           # Pre-trained model file
 ```
