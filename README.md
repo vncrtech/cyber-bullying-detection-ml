@@ -3,9 +3,9 @@
 This project is an AI-based system designed to detect cyberbullying in text data. It leverages machine learning techniques to classify text as either "Bully" or "Not Bully" and provides tools for training, prediction, and visualization.
 
 ## Features
-- **Training Module**: Train a Naive Bayes model using a labeled dataset ([`Core/train.py`](Insult%20Detection/Core/train.py)).
-- **Prediction Module**: Predict whether text data contains bullying content ([`Core/predict.py`](Insult%20Detection/Core/predict.py)).
-- **Twitter Streaming**: Collect and process tweets, visualize them on a map ([`Core/twitter_streaming.py`](Insult%20Detection/Core/twitter_streaming.py)).
+- **Training Module**: Train a Naive Bayes model using a labeled dataset ([`Core/train.py`](bullying_detection/core/train.py)).
+- **Prediction Module**: Predict whether text data contains bullying content ([`Core/predict.py`](bullying_detection/core/predict.py)).
+- **Twitter Streaming**: Collect and process tweets, visualize them on a map ([`Core/twitter_streaming.py`](bullying_detection/core/twitter_streaming.py)).
 - **Visualization**: Generate an interactive map showing tweet locations and their content.
 
 ## Project Structure
@@ -21,9 +21,9 @@ Insult Detection/
 
 ## How to Use
 
-Perform the following commands in the [`Core`](Insult%20Detection/Core) directory:
+Perform the following commands in the [`Core`](bullying_detection/core) directory:
 ```bash
-cd "Insult Detection/Core" 
+cd bullying_detection/core
 ```
 
 1. **Train the Model**:
